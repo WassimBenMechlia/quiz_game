@@ -39,14 +39,19 @@
             android:id="@+id/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_style"
+        android:textColor="@color/white"
             android:text="Menu" />
 
         <Button
             android:id="@+id/exit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/btn_style"
             android:text="Exit"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            />
     </LinearLayout>
 
 </RelativeLayout>

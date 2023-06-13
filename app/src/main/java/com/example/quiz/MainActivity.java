@@ -1,10 +1,10 @@
 package com.example.quiz;
-
+import android.graphics.Color;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         B=findViewById(R.id.B);
         C=findViewById(R.id.C);
         D=findViewById(R.id.D);
+        A.setBackgroundColor(0xFFCA1919);
+        B.setBackgroundColor(0xFFCA1919);
+        C.setBackgroundColor(0xFFCA1919);
+        D.setBackgroundColor(0xFFCA1919);
         submit=findViewById(R.id.submit);
         correctChoise=findViewById(R.id.correctChoise);
         correctChoise.setText("Reponses correct : "+score);
@@ -56,10 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        A.setBackgroundColor(Color.BLUE);
-        B.setBackgroundColor(Color.BLUE);
-        C.setBackgroundColor(Color.BLUE);
-        D.setBackgroundColor(Color.BLUE);
+        A.setBackgroundColor(0xFFCA1919);
+        B.setBackgroundColor(0xFFCA1919);
+        C.setBackgroundColor(0xFFCA1919);
+        D.setBackgroundColor(0xFFCA1919);
         total.setText("Total Questions :"+(totalQuestion-1)+"/"+numberOfQuestions);
         Button clickedButton = (Button) view;
         if(clickedButton.getId()==R.id.submit){
@@ -78,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else{
             //choices button clicked
             selectedAnswer  = clickedButton.getText().toString();
-            clickedButton.setBackgroundColor(Color.MAGENTA);
+            clickedButton.setBackgroundColor(0xFFFFC107);
         }
     }
     public void loadNewQuestion(){
@@ -105,9 +109,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public int indexGenerator(){
         random=new Random();
         int index;
-        do{
-            index = random.nextInt(10);
-        }while (!usedIndices.add(index));
+        //do{
+        //    index = random.nextInt(10);
+        //}while (!usedIndices.add(index));
+        index=random.nextInt(1);
             numberOfQuestions++;
             return index;
     }

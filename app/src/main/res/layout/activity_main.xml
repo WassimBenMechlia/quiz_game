@@ -40,30 +40,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="option A" />
+            android:text="option A"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/white"
+            />
 
         <Button
             android:id="@+id/B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="option B" />
+            android:text="option B"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/white"
+            />
 
         <Button
             android:id="@+id/C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-
-            android:text="option C" />
+            android:background="@drawable/btn_style"
+            android:text="option C"
+            android:textColor="@color/white"
+            />
 
         <Button
             android:id="@+id/D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-
-            android:text="option D" />
+            android:background="@drawable/btn_style"
+            android:text="option D"
+            android:textColor="@color/white"
+            />
 
     </LinearLayout>
 
@@ -76,7 +86,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:gravity="center"
-        android:text="submit" />
+        android:text="submit"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/white"
+        />
     <TextView
         android:id="@+id/correctChoise"
         android:layout_width="match_parent"

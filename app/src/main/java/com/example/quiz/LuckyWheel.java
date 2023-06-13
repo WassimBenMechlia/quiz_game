@@ -23,11 +23,14 @@ public class LuckyWheel extends AppCompatActivity {
                 .show();
     }
     Button exit;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lucky_wheel);
         exit=findViewById(R.id.exit);
+
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
