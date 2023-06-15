@@ -109,10 +109,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public int indexGenerator(){
         random=new Random();
         int index;
-        //do{
-        //    index = random.nextInt(10);
-        //}while (!usedIndices.add(index));
-        index=random.nextInt(1);
+        do{
+            index = random.nextInt(QuestionReponse.question.length);
+        }while (!usedIndices.add(index));
+
             numberOfQuestions++;
             return index;
     }

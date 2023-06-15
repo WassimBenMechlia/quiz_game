@@ -54,9 +54,9 @@
         android:id="@+id/btnspin"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/target"
+        android:layout_below="@+id/wheel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="50dp"
         android:text="Spin"
         android:background="@drawable/btn_spin"
         android:textColor="@color/white"/>
